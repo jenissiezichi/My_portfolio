@@ -19,7 +19,7 @@
 
     <div id="menu" class="hidden absolute top-14 left-0 w-full bg-ash1 md:static md:w-auto md:flex md:bg-transparent">
       <ul class="flex flex-col md:flex-row gap-6 p-6 md:p-0 text-white font-bold">
-        <li><a href="#home" class="hover:text-blue-700 transition">Home</a></li>
+        <li><a href="#home" class="hover:text-blue-700 transition md:focus:text-amber-300">Home</a></li>
         <li><a href="#about" class="hover:text-blue-700 transition">About</a></li>
         <li><a href="#contact" class="hover:text-blue-700 transition">Contact</a></li>
       </ul>
@@ -40,12 +40,12 @@
       I'm <span class="text-ash1">Ezichi</span><br>Jenissi
     </h1>
     <p class="mb-6 px-4 md:px-0">
-    Aspiring Software Engineer and Front-End Developer with a deep love music 
+    Aspiring Software Engineer and Front-End Developer with a deep love for music.
     - I’m fascinated by how rhythm, creativity, and logic blend to turn
      ideas into something real.
     </p>
     <a href="#projects" class="bg-ash1 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition shadow-lg">
-      View My Work
+      About ME..
     </a>
   </div>
 
@@ -62,25 +62,30 @@
 <section id="about" class="flex flex-col md:flex-row gap-8 justify-center items-center px-6 py-10">
 
   <div class="card w-full max-w-md md:w-1/3">
-    <div class="card__content p-6 flex items-center justify-center text-center">
+    <div class="card__content p-6 flex items-center justify-center text-center" id="card__content1">
       <p class="text-sm leading-relaxed">
-        Aspiring Software Engineer and Front-End Developer with a deep love for music — I’m mostly fascinated by how rhythm, creativity, and logic blend to turn ideas into something real. 🎧💻
+      As earlier said I Am Eziokwubundu Jenissi Ezichi....
+       An Aspiring Software Engineer also on a Journey to Back-end. Learning never ends......
+       So I'm Kicking off a Journey of personal 
+       Improvement and Growth. Progress not Comparison..... I’ve always had a passion for tech, earlier from childood. So at one point in my life I knew 
+        where i will be heading to.
       </p>
     </div>
   </div>
 
   <div class="card w-full max-w-md md:w-1/3">
-    <div class="card__content p-6 flex items-center justify-center text-center">
+    <div class="card__content p-6 flex items-center justify-center text-center " id="card__content2">
       <p class="text-sm leading-relaxed">
-        I’ve always had a passion for tech. When it comes to music, my journey started in 2016. I’ve fallen completely in love with it, becoming skilled in several instruments and still learning more every day.
+        After sometime I started I had a different desire in my life too, MUSIC came about. My journey started in 2016, with an intense desire for music and now I’ve fallen completely in love with it, becoming skilled and also improving in several musical instruments and still learning more every day. Now Music plays an important role in my Tech-Life.
       </p>
     </div>
   </div>
 
   <div class="card w-full max-w-md md:w-1/3">
-    <div class="card__content p-6 flex items-center justify-center text-center">
+    <div class="card__content p-6 flex items-center justify-center text-center" id="card__content3">
       <p class="text-sm leading-relaxed">
-        I’m Ezichi Jenissi — a front-end developer with a heart that beats for music. Tech challenges my mind, while music feeds my soul. Still learning, still evolving, loving every step.
+       When run into errors or issues while coding then I'll remember Music always helps me get back on track. This I know that music always helps me calm my mind after hitting a wall when coding.
+       But this is what works for me and It may not work for others but we've got to know wht works for each and every one of us.
       </p>
     </div>
   </div>
@@ -89,6 +94,8 @@
 
 <section id="contact">
 
+
+  </section>
  <style>
 .card {
   /* Remove fixed width: 30% so Tailwind can handle it */
@@ -102,17 +109,25 @@
 
 .card__content {
   color: white;
-  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('Images/Pic.jpg');
   background-size: cover;
   background-position: center;
   border-radius: 17px;
   width: 100%;
   height: 100%;
 }
-
+#card__content1{
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('Images/Pics.jpeg');
+}
+#card__content3{
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('Images/J2.jpeg');
+}
+#card__content2{
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('Images/Pic.jpg');
+}
 .card:hover {
   transform: scale(1.05);
 }
 </style>
  <script src="./index.js"></script>
 </html>
+
