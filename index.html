@@ -23,6 +23,7 @@
       <ul class="flex flex-col md:flex-row gap-6 p-6 md:p-0 text-white font-bold">
         <li><a href="#home" class="hover:text-blue-700 transition md:focus:text-amber-300">Home</a></li>
         <li><a href="#about" class="hover:text-blue-700 transition">About</a></li>
+         <li><a href="#project" class="hover:text-blue-700 transition">Project</a></li>
         <li><a href="#contact" class="hover:text-blue-700 transition">Contact</a></li>
       </ul>
     </div>
@@ -46,8 +47,8 @@
     - I’m fascinated by how rhythm, creativity, and logic blend to turn
      ideas into something real.
     </p>
-    <a href="#about" class="bg-ash1 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition shadow-lg">
-      About ME..
+    <a href="#project" class="bg-ash1 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition shadow-lg">
+      My Projects..
     </a>
   </div>
 
@@ -96,20 +97,42 @@
 <div class="flex flex-col justify-center items-center text-center" > 
   <h1 class="italic font-bold"> Progress Not Comparison</h1>
   This is only the beginning. Click the Projects button below to see what I'm working on, and be sure to check back soon for more updates
-  <br> <br> <a href="#projects" class="bg-ash1 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition shadow-lg">
+  <br> <br> <a href="#project" class="bg-ash1 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition shadow-lg">
       Projects....
     </a>
 
 
 
 </div>
+<br>
+<br>
+<section id="project">
 
 
+<div class="gap-4 p-4 flex justify-center items-center flex flex-col">
+ <img
+        src="./Images/RPS.png"
+        class="flex justify-center items-center object-cover object-center aspect-video w-64">
 
-<section id="contact">
+<br>
+    
+    <p
+      class="text-center ml-4"
+    >
+     Rock Paper Scissor Project Made with Tailwind and Javascript...
+    </p>
+    <br>
+<a href="./RPS/index.html" class="bg-ash1 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition shadow-lg">
+      Check It Out...
+    </a>
+  </div>
 
 
   </section>
+
+
+
+
  <style>
 .card {
   /* Remove fixed width: 30% so Tailwind can handle it */
@@ -150,12 +173,13 @@
 
   btn.addEventListener('click', () => {
     menu.classList.toggle('hidden');
-    menu.classList.toggle('flex'); // Switch between hidden and flex when clicked
+    menu.classList.toggle('flex'); 
   });
 
  </script>
   <br>
   <br>
+  <section id="contact">
  <footer class="bottom-0 left-0 w-full shadow-md bg-ash1 text-center">
  Thank you for visiting! If you have any suggestions, corrections, or an awesome project you'd like me to be part of, please reach out by clicking on
  <a href="https://linktr.ee/Jenissi" class="hover:text-blue-700" target="_blank">
@@ -176,6 +200,7 @@
 </div>
  </div>
  </footer>
+ </section>
 </html>
 
 
