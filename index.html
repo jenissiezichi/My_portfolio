@@ -109,23 +109,98 @@
 <section id="project">
 
 
-<div class="gap-4 p-4 flex justify-center items-center flex flex-col">
- <img
-        src="./Images/RPS.png"
-        class="flex justify-center items-center object-cover object-center aspect-video w-64">
 
-<br>
-    
-    <p
-      class="text-center ml-4"
-    >
-     Rock Paper Scissor Project Made with Tailwind and Javascript...
-    </p>
-    <br>
-<a href="./RPS/index.html" class="bg-ash1 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition shadow-lg">
-      Check It Out...
-    </a>
-  </div>
+<div class="card1">
+<div class="cardhead1">
+<img src="./Images/RPS.png">
+
+</div>
+
+<div class="cardbody">
+<h2 class="text-center"> Rock Papper Scissor Game</h2>
+<p class="text-center">A User friendly web tool to try out a Rock Papper Scissor easily....</p>
+</div>
+<div class="tags">
+<span>HTML</span>
+<span>Tailwind</span>
+<span>Javascript</span>
+<span>UI Design</span>
+</div>
+
+<div class="footer">
+ <a href="./RPS/index.html"> <button">Live Demo..</button></a>
+</div>
+
+</div>
+
+<style>
+.card1{
+  background-color: #1e293b;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-self: center;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 350px;
+  opacity: 0.5;
+  transition: opacity 0.2s ease;
+
+
+}
+p{
+  font-size: .8rem;
+  font-weight: 100;
+}
+.cardhead1{
+  width: 100%;
+  display: block;
+}
+.cardbody{
+  padding: 24px;
+}
+.tags{
+  font-size: 0.75rem;
+  justify-content: center;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 8px;
+ margin-bottom: 25px;
+}
+.tags span{
+  background: #0f172a;
+  border-radius: 50px;
+  padding: 6px 14px;
+  font-weight: 100;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.footer a{
+  background-color: #00DDEB;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.footer a:hover {
+  background-color: #5B42F3;
+}
+.card1:hover{
+  opacity: 1;
+
+}
+</style>
+
+
+
 
 
   </section>
@@ -135,7 +210,7 @@
 
  <style>
 .card {
-  /* Remove fixed width: 30% so Tailwind can handle it */
+  
   height: 320px; /* Increased height for better text fit */
   border-radius: 20px;
   padding: 5px;
@@ -201,6 +276,17 @@
  </div>
  </footer>
  </section>
+
+
+
+
+
+
+
 </html>
+
+
+
+
 
 

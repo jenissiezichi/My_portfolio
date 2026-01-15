@@ -1,0 +1,25 @@
+{
+  "name": "my_portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/jenissiezichi/My_portfolio#readme",
+  "bugs": {
+    "url": "https://github.com/jenissiezichi/My_portfolio/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jenissiezichi/My_portfolio.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "style" : "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css –watch"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "tailwindcss": "^4.1.18"
+  }
+}
