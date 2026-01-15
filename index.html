@@ -1,0 +1,292 @@
+<!doctype html>
+<html style="scroll-behavior: smooth;">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="bg-black text-white">
+<nav class="fixed top-0 left-0 w-full z-10 shadow-md bg-ash1">
+  <div class="flex flex-row justify-between items-center h-14 px-6">
+    
+    <div class="text-white font-bold hover:text-blue-700 cursor-pointer">EzIcHi</div>
+
+    <button id="menu-btn" class="block md:hidden text-white focus:outline-none">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+      </svg>
+    </button>
+
+    <div id="menu" class="hidden absolute top-14 left-0 w-full bg-ash1 md:static md:w-auto md:flex md:bg-transparent">
+      <ul class="flex flex-col md:flex-row gap-6 p-6 md:p-0 text-white font-bold">
+        <li><a href="#home" class="hover:text-blue-700 transition md:focus:text-amber-300">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-700 transition">About</a></li>
+         <li><a href="#project" class="hover:text-blue-700 transition">Project</a></li>
+        <li><a href="#contact" class="hover:text-blue-700 transition">Contact</a></li>
+      </ul>
+    </div>
+    
+  </div>
+</nav>
+<br><br>
+
+    <section id="home" >
+      <br>
+      <br>
+      <br>
+<div class="flex flex-col justify-center items-center md:flex-row md:justify-between">
+
+  <div class="flex flex-col w-full md:w-2xl justify-center items-center text-center md:text-left" id="intro">
+    <h1 class="font-bold text-4xl md:text-6xl my-3.5">
+      I'm <span class="text-ash1">Ezichi</span><br>Jenissi
+    </h1>
+    <p class="mb-6 px-4 md:px-0">
+    Aspiring Software Engineer and Front-End Developer with a deep love for music.
+    - I’m fascinated by how rhythm, creativity, and logic blend to turn
+     ideas into something real.
+    </p>
+    <a href="#project" class="bg-ash1 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition shadow-lg">
+      My Projects..
+    </a>
+  </div>
+
+  <div class="mt-10 md:mt-0 md:mr-16">
+    <img src="Images/Jeni.jpg" class="w-64 h-64 md:w-96 md:h-96 rounded-full object-cover">
+  </div>
+
+</div>
+ 
+    </section>
+<br>
+      <br><br>
+
+<section id="about" class="flex flex-col md:flex-row gap-8 justify-center items-center px-6 py-10">
+
+  <div class="card w-full max-w-md md:w-1/3">
+    <div class="card__content p-6 flex items-center justify-center text-center" id="card__content1">
+      <p class="text-sm leading-relaxed">
+      As mentioned above, I Am Eziokwubundu Jenissi Ezichi....
+       An Aspiring Software Engineer also on a Journey to Back-end. Learning never ends......
+       So I'm Kicking off a Journey of personal 
+       Improvement and Growth. Progress not Comparison..... I’ve always had a passion for tech, earlier from childhood. So at one point in my life I knew 
+        where i will be heading to.
+      </p>
+    </div>
+  </div>
+
+  <div class="card w-full max-w-md md:w-1/3">
+    <div class="card__content p-6 flex items-center justify-center text-center " id="card__content2">
+      <p class="text-sm leading-relaxed">
+        After sometime I started I had a different desire in my life too, MUSIC came about.In 2016, I discovered an intense passion for music. Since then, I’ve fallen completely in love with it, becoming skilled in several instruments while continuing to learn more every day. Today, music plays a vital role in my life as a developer.
+      </p>
+    </div>
+  </div>
+
+  <div class="card w-full max-w-md md:w-1/3">
+    <div class="card__content p-6 flex items-center justify-center text-center" id="card__content3">
+      <p class="text-sm leading-relaxed">
+      When I run into errors or hit a wall while coding, music helps me get back on track. It calms my mind and helps me refocus. I believe everyone needs to find that one thing that helps them recharge—for me, it’s definitely music.
+      </p>
+    </div>
+  </div>
+
+</section>
+
+<div class="flex flex-col justify-center items-center text-center" > 
+  <h1 class="italic font-bold"> Progress Not Comparison</h1>
+  This is only the beginning. Click the Projects button below to see what I'm working on, and be sure to check back soon for more updates
+  <br> <br> <a href="#project" class="bg-ash1 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition shadow-lg">
+      Projects....
+    </a>
+
+
+
+</div>
+<br>
+<br>
+<section id="project">
+
+
+
+<div class="card1">
+<div class="cardhead1">
+<img src="./Images/RPS.png">
+
+</div>
+
+<div class="cardbody">
+<h2 class="text-center"> Rock Papper Scissor Game</h2>
+<p class="text-center">A User friendly web tool to try out a Rock Papper Scissor easily....</p>
+</div>
+<div class="tags">
+<span>HTML</span>
+<span>Tailwind</span>
+<span>Javascript</span>
+<span>UI Design</span>
+</div>
+
+<div class="footer">
+ <a href="./RPS/index.html"> <button">Live Demo..</button></a>
+</div>
+
+</div>
+
+<style>
+.card1{
+  background-color: #1e293b;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-self: center;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 350px;
+  opacity: 0.5;
+  transition: opacity 0.2s ease;
+
+
+}
+p{
+  font-size: .8rem;
+  font-weight: 100;
+}
+.cardhead1{
+  width: 100%;
+  display: block;
+}
+.cardbody{
+  padding: 24px;
+}
+.tags{
+  font-size: 0.75rem;
+  justify-content: center;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 8px;
+ margin-bottom: 25px;
+}
+.tags span{
+  background: #0f172a;
+  border-radius: 50px;
+  padding: 6px 14px;
+  font-weight: 100;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.footer a{
+  background-color: #00DDEB;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.footer a:hover {
+  background-color: #5B42F3;
+}
+.card1:hover{
+  opacity: 1;
+
+}
+</style>
+
+
+
+
+
+  </section>
+
+
+
+
+ <style>
+.card {
+  
+  height: 320px; /* Increased height for better text fit */
+  border-radius: 20px;
+  padding: 5px;
+  transition: transform 0.3s ease;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  display: flex;
+}
+
+.card__content {
+  color: white;
+  background-size: cover;
+  background-position: center;
+  border-radius: 17px;
+  width: 100%;
+  height: 100%;
+}
+#card__content1{
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('Images/Pics.jpeg');
+}
+#card__content3{
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('Images/J2.jpeg');
+}
+#card__content2{
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('Images/Pic.jpg');
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+</style>
+ <script>
+  
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+    menu.classList.toggle('flex'); 
+  });
+
+ </script>
+  <br>
+  <br>
+  <section id="contact">
+ <footer class="bottom-0 left-0 w-full shadow-md bg-ash1 text-center">
+ Thank you for visiting! If you have any suggestions, corrections, or an awesome project you'd like me to be part of, please reach out by clicking on
+ <a href="https://linktr.ee/Jenissi" class="hover:text-blue-700" target="_blank">
+      Get To ME.
+    </a>
+<br>
+<br>
+
+ <div class="flex justify-between">
+ <div class="text-white font-bold hover:text-blue-700 cursor-pointer">EzIcHi</div>
+
+
+  <div class="social-icons">
+  <a href="https://wa.me/2347069632334"><i class='bx bxl-whatsapp'></i></a>
+  <a href="https://www.linkedin.com/in/jenissi-e-ezichi-47b6893a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class='bx bxl-linkedin'></i></a>
+  <a href="https://www.facebook.com/jenissiezichi.eziokwubundu"><i class='bx bxl-facebook'></i></a>
+  <a href="https://www.instagram.com/the_realjeni?igsh=MXUzZGdxejdlanJqbg=="><i class='bx bxl-instagram'></i></a>
+</div>
+ </div>
+ </footer>
+ </section>
+
+
+
+
+
+
+
+</html>
+
+
+
+
+
+
