@@ -622,12 +622,15 @@ particlesJS('particles-js', {
   const skillObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.querySelectorAll('.skill-bar').forEach(bar => {
-          bar.style.width = bar.getAttribute('data-width');
-        });
+        // Wait for fade-in to finish first, then animate bars
+        setTimeout(() => {
+          entry.target.querySelectorAll('.skill-bar').forEach(bar => {
+            bar.style.width = bar.getAttribute('data-width');
+          });
+        }, 900);
       }
     });
-  }, { threshold: 0.3 });
+  }, { threshold: 0.2 });
 
   document.querySelectorAll('#skills').forEach(el => {
     skillObserver.observe(el);
