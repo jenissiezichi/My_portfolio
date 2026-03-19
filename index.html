@@ -312,8 +312,7 @@ p{
   <br>
   <br>
 
-  
-<section id="contact" class="py-20 px-6">
+  <section id="contact" class="py-20 px-6">
   <div class="max-w-2xl mx-auto">
     
     <!-- Header -->
@@ -324,54 +323,62 @@ p{
     </div>
 
     <!-- Card -->
-    <div class="bg-gray-900 border border-gray-700 rounded-2xl p-8 shadow-2xl">
+    <div class="bg-gray-900 border border-gray-700 rounded-3xl p-8 shadow-2xl">
       
       <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="flex flex-col gap-6">
         
         <!-- Name & Email Row -->
         <div class="flex flex-col md:flex-row gap-4">
-          
-          <div class="flex-1 relative group">
-            <span class="absolute left-4 top-3.5 text-main text-lg">👤</span>
+
+          <!-- Name -->
+          <div class="flex-1 relative">
+            <span class="absolute left-4 top-3.5 text-lg">👤</span>
             <input type="text" name="name" placeholder="Your Name" required
-            class="w-full pl-10 pr-4 py-3 rounded-xl bg-gray-800 text-white border border-gray-600 
-            focus:outline-none focus:border-main focus:ring-2 focus:ring-main/30 
-            transition-all duration-300 placeholder-gray-500"/>
+            style="transition: box-shadow 0.3s; border-radius: 50px;"
+            onfocus="this.style.boxShadow='0 0 15px rgba(0,128,128,0.6)'"
+            onblur="this.style.boxShadow='none'"
+            class="w-full pl-10 pr-4 py-3 bg-gray-800 text-white border border-gray-600 focus:outline-none placeholder-gray-500"/>
           </div>
 
-          <div class="flex-1 relative group">
-            <span class="absolute left-4 top-3.5 text-main text-lg">📧</span>
+          <!-- Email -->
+          <div class="flex-1 relative">
+            <span class="absolute left-4 top-3.5 text-lg">📧</span>
             <input type="email" name="email" placeholder="Your Email" required
-            class="w-full pl-10 pr-4 py-3 rounded-xl bg-gray-800 text-white border border-gray-600 
-            focus:outline-none focus:border-main focus:ring-2 focus:ring-main/30 
-            transition-all duration-300 placeholder-gray-500"/>
+            style="transition: box-shadow 0.3s; border-radius: 50px;"
+            onfocus="this.style.boxShadow='0 0 15px rgba(0,128,128,0.6)'"
+            onblur="this.style.boxShadow='none'"
+            class="w-full pl-10 pr-4 py-3 bg-gray-800 text-white border border-gray-600 focus:outline-none placeholder-gray-500"/>
           </div>
 
         </div>
 
         <!-- Subject -->
         <div class="relative">
-          <span class="absolute left-4 top-3.5 text-main text-lg">💼</span>
+          <span class="absolute left-4 top-3.5 text-lg">💼</span>
           <input type="text" name="subject" placeholder="Subject" required
-          class="w-full pl-10 pr-4 py-3 rounded-xl bg-gray-800 text-white border border-gray-600 
-          focus:outline-none focus:border-main focus:ring-2 focus:ring-main/30 
-          transition-all duration-300 placeholder-gray-500"/>
+          style="transition: box-shadow 0.3s; border-radius: 50px;"
+          onfocus="this.style.boxShadow='0 0 15px rgba(0,128,128,0.6)'"
+          onblur="this.style.boxShadow='none'"
+          class="w-full pl-10 pr-4 py-3 bg-gray-800 text-white border border-gray-600 focus:outline-none placeholder-gray-500"/>
         </div>
 
         <!-- Message -->
         <div class="relative">
-          <span class="absolute left-4 top-3.5 text-main text-lg">💬</span>
+          <span class="absolute left-4 top-3.5 text-lg">💬</span>
           <textarea name="message" placeholder="Your Message..." rows="6" required
-          class="w-full pl-10 pr-4 py-3 rounded-xl bg-gray-800 text-white border border-gray-600 
-          focus:outline-none focus:border-main focus:ring-2 focus:ring-main/30 
-          transition-all duration-300 placeholder-gray-500 resize-none"></textarea>
+          style="transition: box-shadow 0.3s; border-radius: 20px;"
+          onfocus="this.style.boxShadow='0 0 15px rgba(0,128,128,0.6)'"
+          onblur="this.style.boxShadow='none'"
+          class="w-full pl-10 pr-4 py-3 bg-gray-800 text-white border border-gray-600 focus:outline-none placeholder-gray-500 resize-none"></textarea>
         </div>
 
         <!-- Submit Button -->
         <button type="submit"
-        class="w-full py-4 bg-main text-white font-bold text-lg rounded-xl 
-        hover:opacity-80 hover:scale-105 active:scale-95
-        transition-all duration-300 shadow-lg shadow-main/30 flex items-center justify-center gap-2">
+        style="transition: transform 0.2s, box-shadow 0.2s; border-radius: 50px;"
+        onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 20px rgba(0,128,128,0.6)'"
+        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none'"
+        onmousedown="this.style.transform='scale(0.95)'"
+        class="w-full py-4 bg-main text-white font-bold text-lg shadow-lg flex items-center justify-center gap-2">
           Send Message 🚀
         </button>
 
@@ -391,7 +398,8 @@ p{
 
     </div>
   </div>
-</section>
+  </section>
+
 
   <br>
   <br>
