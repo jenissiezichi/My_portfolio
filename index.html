@@ -313,25 +313,86 @@ p{
   <br>
 
   
-   <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" 
-class="flex flex-col gap-4 max-w-lg mx-auto">
-  
-  <input type="text" name="name" placeholder="Your Name"
-  class="p-3 rounded-lg bg-gray-800 text-white border border-gray-600 focus:outline-none focus:border-main" required/>
+<section id="contact" class="py-20 px-6">
+  <div class="max-w-2xl mx-auto">
+    
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold text-white">Get In <span class="text-main">Touch</span></h2>
+      <p class="text-gray-400 mt-3">Have a project or just want to say hi? Drop a message!</p>
+      <div class="w-20 h-1 bg-main mx-auto mt-4 rounded-full"></div>
+    </div>
 
-  <input type="email" name="email" placeholder="Your Email"
-  class="p-3 rounded-lg bg-gray-800 text-white border border-gray-600 focus:outline-none focus:border-main" required/>
+    <!-- Card -->
+    <div class="bg-gray-900 border border-gray-700 rounded-2xl p-8 shadow-2xl">
+      
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="flex flex-col gap-6">
+        
+        <!-- Name & Email Row -->
+        <div class="flex flex-col md:flex-row gap-4">
+          
+          <div class="flex-1 relative group">
+            <span class="absolute left-4 top-3.5 text-main text-lg">👤</span>
+            <input type="text" name="name" placeholder="Your Name" required
+            class="w-full pl-10 pr-4 py-3 rounded-xl bg-gray-800 text-white border border-gray-600 
+            focus:outline-none focus:border-main focus:ring-2 focus:ring-main/30 
+            transition-all duration-300 placeholder-gray-500"/>
+          </div>
 
-  <textarea name="message" placeholder="Your Message" rows="5"
-  class="p-3 rounded-lg bg-gray-800 text-white border border-gray-600 focus:outline-none focus:border-main" required></textarea>
+          <div class="flex-1 relative group">
+            <span class="absolute left-4 top-3.5 text-main text-lg">📧</span>
+            <input type="email" name="email" placeholder="Your Email" required
+            class="w-full pl-10 pr-4 py-3 rounded-xl bg-gray-800 text-white border border-gray-600 
+            focus:outline-none focus:border-main focus:ring-2 focus:ring-main/30 
+            transition-all duration-300 placeholder-gray-500"/>
+          </div>
 
-  <button type="submit"
-  class="bg-main text-white py-3 px-6 rounded-lg hover:opacity-80 transition">
-    Send Message 🚀
-  </button>
+        </div>
 
-   </form>
-  <section id="contact">
+        <!-- Subject -->
+        <div class="relative">
+          <span class="absolute left-4 top-3.5 text-main text-lg">💼</span>
+          <input type="text" name="subject" placeholder="Subject" required
+          class="w-full pl-10 pr-4 py-3 rounded-xl bg-gray-800 text-white border border-gray-600 
+          focus:outline-none focus:border-main focus:ring-2 focus:ring-main/30 
+          transition-all duration-300 placeholder-gray-500"/>
+        </div>
+
+        <!-- Message -->
+        <div class="relative">
+          <span class="absolute left-4 top-3.5 text-main text-lg">💬</span>
+          <textarea name="message" placeholder="Your Message..." rows="6" required
+          class="w-full pl-10 pr-4 py-3 rounded-xl bg-gray-800 text-white border border-gray-600 
+          focus:outline-none focus:border-main focus:ring-2 focus:ring-main/30 
+          transition-all duration-300 placeholder-gray-500 resize-none"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit"
+        class="w-full py-4 bg-main text-white font-bold text-lg rounded-xl 
+        hover:opacity-80 hover:scale-105 active:scale-95
+        transition-all duration-300 shadow-lg shadow-main/30 flex items-center justify-center gap-2">
+          Send Message 🚀
+        </button>
+
+      </form>
+
+      <!-- Social Links -->
+      <div class="mt-8 pt-6 border-t border-gray-700 flex justify-center gap-6 text-gray-400 text-sm">
+        <a href="https://linktr.ee/Jenissi" target="_blank"
+        class="hover:text-main transition flex items-center gap-1">
+          🌿 Linktree
+        </a>
+        <a href="https://github.com/jenissiezichi" target="_blank"
+        class="hover:text-main transition flex items-center gap-1">
+          🐙 GitHub
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+  <section id="contact2">
  <footer class="bottom-0 left-0 w-full shadow-md bg-main text-center">
  Thank you for visiting! If you have any suggestions, corrections, or an awesome project you'd like me to be part of, please reach out by clicking on
  <a href="https://linktr.ee/Jenissi" class="hover:text-blue-700" target="_blank">
