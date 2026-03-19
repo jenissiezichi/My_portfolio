@@ -500,14 +500,13 @@ p{
     const loader = document.getElementById('loader');
     
     
-    setTimeout(() => {
-      loader.classList.add('hide');
-      
-      setTimeout(() => {
-        loader.remove();
-      }, 800);
-    }, 1500);
-  });
+setTimeout(() => {
+  loader.classList.add('hide');
+  document.body.classList.remove('loading'); // ✅ Add this line!
+  setTimeout(() => {
+    loader.remove();
+  }, 800);
+}, 1500);
 </script>
 
 
