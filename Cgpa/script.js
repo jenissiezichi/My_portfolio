@@ -105,11 +105,18 @@ function totalUnit(){
  document.getElementById('totalUnits').textContent = total;
 }
 function clearAll() {
+  const n1 = document.getElementById("cgpa");
+  const u1 = document.getElementById("totalUnits");
+ const g1 = document.getElementById("position");
+ g1.textContent = '-';
+ u1.textContent= 0;
+ n1.textContent = '-';
  if (!confirm('Delete ALL data?')) return;
  courses = [];
  renderCourses()
 
  popUp('Cleared!');
+ 
 }
 
 function summary(){
