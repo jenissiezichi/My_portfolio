@@ -55,7 +55,7 @@
 </h1>
     <p class="mb-6 px-4 md:px-0 font-bold">
     Aspiring Software Engineer and Front-End Developer with a deep love for music.
-    - I’m fascinated by how rhythm, creativity, and logic blend to turn
+    - I'm fascinated by how rhythm, creativity, and logic blend to turn
      ideas into something real.
     </p>
     <a href="#project" class="bg-main text-white px-6 py-3 rounded-full hover:bg-blue-700 transition shadow-lg">
@@ -82,7 +82,7 @@
       As mentioned above, I Am Eziokwubundu Jenissi Ezichi....
        An Aspiring Software Engineer also on a Journey to Back-end. Learning never ends......
        So I'm Kicking off a Journey of personal 
-       Improvement and Growth. Progress not Comparison..... I’ve always had a passion for tech, earlier from childhood. So at one point in my life I knew 
+       Improvement and Growth. Progress not Comparison..... I've always had a passion for tech, earlier from childhood. So at one point in my life I knew 
         where i will be heading to.
       </p>
     </div>
@@ -92,7 +92,7 @@
   <div class="card w-full max-w-md md:w-1/3">
     <div class="card__content p-6 flex items-center justify-center text-center " id="card__content2">
       <p class="text-sm leading-relaxed font-bold">
-        After sometime I started, I had a different desire in my life too, then MUSIC came about.In 2016, I discovered an intense passion for music. Since then, I’ve fallen completely in love with it, becoming skilled in several instruments while continuing to learn more every day. Today, music plays a vital role in my life as a developer.
+        After sometime I started, I had a different desire in my life too, then MUSIC came about.In 2016, I discovered an intense passion for music. Since then, I've fallen completely in love with it, becoming skilled in several instruments while continuing to learn more every day. Today, music plays a vital role in my life as a developer.
       </p>
     </div>
   </div>
@@ -100,7 +100,7 @@
   <div class="card w-full max-w-md md:w-1/3">
     <div class="card__content p-6 flex items-center justify-center text-center" id="card__content3">
       <p class="text-sm leading-relaxed font-bold">
-      When I run into errors or hit a wall while coding, music helps me get back on track. It calms my mind and helps me refocus. I believe everyone needs to find that one thing that helps them recharge—for me, it’s definitely music.
+      When I run into errors or hit a wall while coding, music helps me get back on track. It calms my mind and helps me refocus. I believe everyone needs to find that one thing that helps them recharge—for me, it's definitely music.
       </p>
     </div>
   </div>
@@ -298,9 +298,6 @@
 </div>
 
 
-
-
-
 <div class="card1">
 <div class="cardhead1">
 <img src="./Images/calc.png">
@@ -420,7 +417,7 @@ transform: translateY(-6px);
  <style>
 .card {
   
-  height: 320px; /* Increased height for better text fit */
+  height: 320px;
   border-radius: 20px;
   padding: 5px;
   transition: transform 0.3s ease;
@@ -484,64 +481,45 @@ transform: translateY(-6px);
   <section id="contact" class="fade-in py-20 px-6">
   <div class="max-w-2xl mx-auto">
     
-    <!-- Header -->
     <div class="text-center mb-12">
       <h2 class="text-4xl font-bold text-white">Get In <span class="text-main">Touch</span></h2>
       <p class="text-gray-400 mt-3">Have a project or just want to say hi? Drop a message!</p>
       <div class="w-20 h-1 bg-main mx-auto mt-4 rounded-full"></div>
     </div>
 
-    <!-- Card -->
     <div class="bg-gray-900 border border-gray-700 rounded-3xl p-8 shadow-2xl">
       
       <form action="https://formspree.io/f/mjgalvwb" method="POST" class="flex flex-col gap-6">
-        
-        <!-- Name & Email Row -->
-        <div class="flex flex-col md:flex-row gap-4">
 
-          <!-- Name -->
-          <div class="flex-1 relative">
-            <span class="absolute left-4 top-3.5 text-lg">👤</span>
-            <input type="text" name="name" placeholder="Your Name" required
-            style="transition: box-shadow 0.3s; border-radius: 50px;"
-            onfocus="this.style.boxShadow='0 0 15px rgba(0,128,128,0.6)'"
-            onblur="this.style.boxShadow='none'"
-            class="w-full pl-10 pr-4 py-3 bg-gray-800 text-white border border-gray-600 focus:outline-none placeholder-gray-500"/>
-          </div>
-
-          <!-- Email -->
-          <div class="flex-1 relative">
-            <span class="absolute left-4 top-3.5 text-lg">📧</span>
-            <input type="email" name="email" placeholder="Your Email" required
-            style="transition: box-shadow 0.3s; border-radius: 50px;"
-            onfocus="this.style.boxShadow='0 0 15px rgba(0,128,128,0.6)'"
-            onblur="this.style.boxShadow='none'"
-            class="w-full pl-10 pr-4 py-3 bg-gray-800 text-white border border-gray-600 focus:outline-none placeholder-gray-500"/>
-          </div>
-
-        </div>
-
-        <!-- Subject -->
-        <div class="relative">
-          <span class="absolute left-4 top-3.5 text-lg">💼</span>
-          <input type="text" name="subject" placeholder="Subject" required
+        <div class="flex flex-col gap-1.5">
+          <label for="name" class="text-sm font-semibold text-white">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="John Doe" required
           style="transition: box-shadow 0.3s; border-radius: 50px;"
           onfocus="this.style.boxShadow='0 0 15px rgba(0,128,128,0.6)'"
           onblur="this.style.boxShadow='none'"
-          class="w-full pl-10 pr-4 py-3 bg-gray-800 text-white border border-gray-600 focus:outline-none placeholder-gray-500"/>
+          class="w-full px-4 py-3 bg-gray-800 text-white border border-gray-600 focus:outline-none placeholder-gray-500"/>
         </div>
 
-        <!-- Message -->
-        <div class="relative">
-          <span class="absolute left-4 top-3.5 text-lg">💬</span>
-          <textarea name="message" placeholder="Your Message..." rows="6" required
+        <div class="flex flex-col gap-1.5">
+          <label for="email" class="text-sm font-semibold text-white">Email</label>
+          <input type="email" id="email" name="email" placeholder="jenissi@gmail.com" required
+          style="transition: box-shadow 0.3s; border-radius: 50px;"
+          onfocus="this.style.boxShadow='0 0 15px rgba(0,128,128,0.6)'"
+          onblur="this.style.boxShadow='none'"
+          class="w-full px-4 py-3 bg-gray-800 text-white border border-gray-600 focus:outline-none placeholder-gray-500"/>
+          <p class="text-xs text-gray-500">Email Address</p>
+        </div>
+
+        <div class="flex flex-col gap-1.5">
+          <label for="message" class="text-sm font-semibold text-white">Message</label>
+          <textarea id="message" name="message" placeholder="Your Message..." rows="6" required
           style="transition: box-shadow 0.3s; border-radius: 20px;"
           onfocus="this.style.boxShadow='0 0 15px rgba(0,128,128,0.6)'"
           onblur="this.style.boxShadow='none'"
-          class="w-full pl-10 pr-4 py-3 bg-gray-800 text-white border border-gray-600 focus:outline-none placeholder-gray-500 resize-none"></textarea>
+          class="w-full px-4 py-3 bg-gray-800 text-white border border-gray-600 focus:outline-none placeholder-gray-500 resize-none"></textarea>
+          <p class="text-xs text-gray-500">Feel free to drop your Suggestions, Thank You.</p>
         </div>
 
-        <!-- Submit Button -->
         <button type="submit"
         style="transition: transform 0.2s, box-shadow 0.2s; border-radius: 50px;"
         onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 20px rgba(0,128,128,0.6)'"
@@ -553,7 +531,6 @@ transform: translateY(-6px);
 
       </form>
 
-      <!-- Social Links -->
       <div class="mt-8 pt-6 border-t border-gray-700 flex justify-center gap-6 text-gray-400 text-sm">
         <a href="https://linktr.ee/Jenissi" target="_blank"
         class="hover:text-main transition flex items-center gap-1">
@@ -666,9 +643,3 @@ particlesJS('particles-js', {
 </script>
 
 </html>
-
-
-
-
-
-See
