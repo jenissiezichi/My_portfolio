@@ -1,7 +1,7 @@
 window.alert('Still under development — kindly drop your suggestions using the button above.');
 
 let data = JSON.parse(localStorage.getItem("storage")) || { semester: [], activeId: null };
-let courses = [];
+let courses = JSON.parse(localStorage.getItem("courses")) || [];
 
 function active() {
  return data.semester.find(s => s.id === data.activeId) || data.semester[0];
@@ -27,6 +27,12 @@ function createSem(name) {
  render();
 }
 
+function saveData() {
+ localStorage.setItem("courses", JSON.stringify(courses));
+ const cgpa = document.getElementById('cgpa').textContent;
+ localStorage.setItem("cgpa", cgpa);
+}
+
 function renderCourses() {
  const tbody = document.getElementById("courseList");
 
@@ -48,14 +54,16 @@ function renderCourses() {
  }
 
  tbody.innerHTML = rows;
-
 }
+
 function deleteCourse(index){
  courses.splice(index, 1);
  renderCourses();
  summary();
+ saveData();
  popUp('Course Removed✔️');
 }
+
 function addCourse() {
  const n = document.getElementById("name");
  const u = document.getElementById("unit");
@@ -85,6 +93,7 @@ function addCourse() {
  renderCourses();
  totalUnit();
  summary();
+ saveData();
  popUp(cName + ' Added ✔️');
 }
 
@@ -99,6 +108,7 @@ function popUp(msg) {
   pop.classList.add('opacity-0');
  }, 2000);
 }
+
 function totalUnit(){
  let total = 0;
  for (let i = 0; i < courses.length; i++) {
@@ -106,6 +116,7 @@ function totalUnit(){
  }
  document.getElementById('totalUnits').textContent = total;
 }
+
 function clearAll() {
   const n1 = document.getElementById("cgpa");
   const u1 = document.getElementById("totalUnits");
@@ -115,10 +126,10 @@ function clearAll() {
  n1.textContent = '-';
  if (!confirm('Delete ALL data?')) return;
  courses = [];
- renderCourses()
-
+ localStorage.removeItem("courses");
+ localStorage.removeItem("cgpa");
+ renderCourses();
  popUp('Cleared!');
- 
 }
 
 function summary(){
@@ -150,3 +161,6 @@ function classDegree(cgpa){
   return'Pass';
  return '-'
 }
+
+renderCourses();
+summary();
