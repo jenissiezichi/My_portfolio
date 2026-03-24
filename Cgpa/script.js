@@ -1,8 +1,4 @@
-const devAlert = document.getElementById('devAlert');
-devAlert.classList.remove('hidden');   
-setTimeout(() => {
-  devAlert.classList.add('hidden');         
-}, 4000);
+window.alert('Still under development — kindly drop your suggestions using the button above.');
 
 let data = JSON.parse(localStorage.getItem("storage")) || { semester: [], activeId: null };
 let courses = [];
