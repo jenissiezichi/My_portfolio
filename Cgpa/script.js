@@ -1,4 +1,8 @@
-window.alert('Cgpa Web App Is still Undergoing Development. Kindly Feel Free To drop any Suggestions.')
+const devAlert = document.getElementById('devAlert');
+devAlert.classList.remove('hidden');   
+setTimeout(() => {
+  devAlert.classList.add('hidden');         
+}, 4000);
 
 let data = JSON.parse(localStorage.getItem("storage")) || { semester: [], activeId: null };
 let courses = [];
