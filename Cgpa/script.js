@@ -1,3 +1,5 @@
+window.alert('Cgpa Web App Is still Undergoing Development. Kindly Feel Free To drop any Suggestions.')
+
 let data = JSON.parse(localStorage.getItem("storage")) || { semester: [], activeId: null };
 let courses = [];
 
