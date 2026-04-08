@@ -1,4 +1,4 @@
-window.alert('Still under development — kindly drop your suggestions using the button above.');
+
 
 let data = loadData();
 let popUpTimerId = null;
